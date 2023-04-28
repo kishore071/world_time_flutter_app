@@ -30,7 +30,8 @@ class WorldTime{
       //print(now.hour);
       //set the time property
       //late String boo;
-      isDayTime = now.hour>= 12 ?true : false;
+      if(now.hour<12 && now.hour>1){isDayTime=true;}
+      else{isDayTime=false;}
     }
     catch(e){
       print('System error! Wait for it to be corrected');
