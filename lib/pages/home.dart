@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
     String bgcolor;
     Color bgcolors;
     bool bg= data['isDayTime'];
-    if(bg=='false'){
+    if(bg){
       bgcolor="mor.jpg";
       bgcolors=Colors.indigo.shade400;
     }else{
